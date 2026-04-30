@@ -25,7 +25,7 @@ export default function SignInPage() {
       callbackURL: "/",
     });
 
-    console.log({data, error})
+    
   };
 
   return (
