@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import AnimalCard from './AnimalCard';
 
 const TopGenerations = async() => {
   const res = await fetch('https://livestock-booking-platform.vercel.app/data.json');
@@ -8,13 +9,10 @@ const TopGenerations = async() => {
   console.log(topAnimals)
   return (
     <div>
-      <h1 className='text-2xl font-bold mt-5'>Top Animals</h1>
-      <div>
+      <h1 className='text-2xl font-bold my-5'>Top Animals</h1>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
         {
-          topAnimals.map(animal => <div key={animal.id}>
-             <h2>name: {animal.name}</h2>
-             <Image src={animal.image} alt={animal.name} width={500} height={300} />
-          </div>)
+          topAnimals.map(animal => <AnimalCard key={animal.id} animal={animal} />)
         }
       </div>
     </div>
