@@ -31,13 +31,13 @@ const Footer = () => {
                 className="dark:brightness-200"
               />
               <h2 className="text-xl font-semibold tracking-tight dark:text-white bg-linear-65 from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                animal
+                QurbaniHut
               </h2>
             </div>
 
             <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 max-w-xs">
-              Create production-ready AI visuals in seconds. Built for speed,
-              scale, and creativity.
+               বাংলাদেশের সেরা কোরবানির পশুর অনলাইন মার্কেটপ্লেস। 
+//             সহজে, নিরাপদে এবং বিশ্বাসের সাথে আপনার পছন্দের পশু কিনুন।
             </p>
           </div>
 
@@ -134,7 +134,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-          <p>© {new Date().getFullYear()} pixgen. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} QurbaniHt. All rights reserved.</p>
 
           <div className="flex items-center gap-6">
             <Link
@@ -157,3 +157,79 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+// import Link from "next/link";
+// import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+
+// const Footer = () => {
+//   return (
+//     <footer className="bg-gray-900 text-gray-300 mt-16">
+//       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+        
+//         {/* Brand */}
+//         <div>
+//           <h2 className="text-2xl font-bold text-white">QurbaniHut</h2>
+//           <p className="mt-4 text-sm">
+//             বাংলাদেশের সেরা কোরবানির পশুর অনলাইন মার্কেটপ্লেস। 
+//             সহজে, নিরাপদে এবং বিশ্বাসের সাথে আপনার পছন্দের পশু কিনুন।
+//           </p>
+//         </div>
+
+//         {/* Quick Links */}
+//         <div>
+//           <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+//           <ul className="space-y-2 text-sm">
+//             <li><Link href="/" className="hover:text-white">Home</Link></li>
+//             <li><Link href="/animals" className="hover:text-white">All Animals</Link></li>
+//             <li><Link href="/about" className="hover:text-white">About Us</Link></li>
+//             <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+//           </ul>
+//         </div>
+
+//         {/* Categories */}
+//         <div>
+//           <h3 className="text-lg font-semibold text-white mb-4">Categories</h3>
+//           <ul className="space-y-2 text-sm">
+//             <li><Link href="/category/cow" className="hover:text-white">Cow</Link></li>
+//             <li><Link href="/category/goat" className="hover:text-white">Goat</Link></li>
+//             <li><Link href="/category/sheep" className="hover:text-white">Sheep</Link></li>
+//             <li><Link href="/category/camel" className="hover:text-white">Camel</Link></li>
+//           </ul>
+//         </div>
+
+//         {/* Contact */}
+//         <div>
+//           <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+//           <p className="text-sm">📍 Dhaka, Bangladesh</p>
+//           <p className="text-sm mt-2">📞 +880 1777-906923</p>
+//           <p className="text-sm mt-2">✉️ mdferdouahmed31122003@gmail.com</p>
+
+//           {/* Social Icons */}
+//           <div className="flex space-x-4 mt-4">
+//             <Link href="#" className="bg-gray-800 p-2 rounded-full hover:bg-green-500 transition">
+//               <FaFacebookF />
+//             </Link>
+//             <Link href="#" className="bg-gray-800 p-2 rounded-full hover:bg-green-500 transition">
+//               <FaTwitter />
+//             </Link>
+//             <Link href="#" className="bg-gray-800 p-2 rounded-full hover:bg-green-500 transition">
+//               <FaInstagram />
+//             </Link>
+//             <Link href="#" className="bg-gray-800 p-2 rounded-full hover:bg-green-500 transition">
+//               <FaYoutube />
+//             </Link>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Bottom */}
+//       <div className="border-t border-gray-700 text-center py-4 text-sm">
+//         © {new Date().getFullYear()} QurbaniHut. All rights reserved.
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default Footer;
