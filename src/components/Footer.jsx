@@ -25,7 +25,7 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               <Image
                 src="/logo.png"
-                alt="pixgen logo"
+                alt="animal logo"
                 width={32}
                 height={32}
                 className="dark:brightness-200"
