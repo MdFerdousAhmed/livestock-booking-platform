@@ -20,7 +20,6 @@ const AnimalDetailsPage = async ({ params }) => {
   const res = await fetch("https://livestock-booking-platform.vercel.app/data.json");
   const animals = await res.json();
   const animal = animals.find(a => a.id == id);
-  console.log(animal);
   return (
     <Card >
         <div className="max-w-lg bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 grid space-y-4 container mx-auto p-4 justify-center items-center">
