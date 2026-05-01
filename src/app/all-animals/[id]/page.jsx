@@ -2,6 +2,17 @@ import { Card } from '@heroui/react';
 import Image from 'next/image';
 import React from 'react';
 
+export const generateMetadata = async({ params }) => {
+  const { id } = await params;
+  const res = await fetch("https://livestock-booking-platform.vercel.app/data.json");
+  const animals = await res.json();
+  const animal = animals.find(a => a.id == id);
+  return {
+    title: animal.name,
+    description: animal.description,
+  }
+};
+
 const AnimalDetailsPage = async ({ params }) => {
   const { id } = await params; // Get the animal ID from the URL parameters
   const res = await fetch("https://livestock-booking-platform.vercel.app/data.json");

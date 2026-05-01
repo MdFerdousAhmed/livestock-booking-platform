@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -36,8 +37,8 @@ const Footer = () => {
             </div>
 
             <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 max-w-xs">
-               বাংলাদেশের সেরা কোরবানির পশুর অনলাইন মার্কেটপ্লেস। 
-//             সহজে, নিরাপদে এবং বিশ্বাসের সাথে আপনার পছন্দের পশু কিনুন।
+              বাংলাদেশের সেরা কোরবানির পশুর অনলাইন মার্কেটপ্লেস।
+            //             সহজে, নিরাপদে এবং বিশ্বাসের সাথে আপনার পছন্দের পশু কিনুন।
             </p>
           </div>
 
@@ -108,24 +109,27 @@ const Footer = () => {
           </div>
 
           {/* CTA Block */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold text-black dark:text-white">
-              Start creating
-            </h3>
+          <div>
+            <h3 className="font-semibold  mb-4">Contact</h3>
+            <p className="text-sm">📍 Dhaka, Bangladesh</p>
+            <p className="text-sm mt-2">📞 +880 1777-906923</p>
+            <p className="text-sm mt-2">✉️ mdferdouahmed31122003@gmail.com</p>
 
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Generate your first AI image today.
-            </p>
-
-            <Link
-              href="/signup"
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full 
-              bg-black text-white dark:bg-white dark:text-black 
-              text-sm font-medium transition-all duration-200 
-              hover:scale-[1.02] hover:shadow-lg hover:shadow-black/10 dark:hover:shadow-white/10"
-            >
-              Get Started
-            </Link>
+            {/* Social Icons */}
+            <div className="flex space-x-4 mt-4">
+              <Link href="#" className="border p-2 rounded-full hover:bg-green-500 transition">
+                <FaFacebookF />
+              </Link>
+              <Link href="#" className="border p-2 rounded-full hover:bg-green-500 transition">
+                <FaTwitter />
+              </Link>
+              <Link href="#" className="border p-2 rounded-full hover:bg-green-500 transition">
+                <FaInstagram />
+              </Link>
+              <Link href="#" className="border p-2 rounded-full hover:bg-green-500 transition">
+                <FaYoutube />
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -160,76 +164,3 @@ export default Footer;
 
 
 
-// import Link from "next/link";
-// import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
-
-// const Footer = () => {
-//   return (
-//     <footer className="bg-gray-900 text-gray-300 mt-16">
-//       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
-        
-//         {/* Brand */}
-//         <div>
-//           <h2 className="text-2xl font-bold text-white">QurbaniHut</h2>
-//           <p className="mt-4 text-sm">
-//             বাংলাদেশের সেরা কোরবানির পশুর অনলাইন মার্কেটপ্লেস। 
-//             সহজে, নিরাপদে এবং বিশ্বাসের সাথে আপনার পছন্দের পশু কিনুন।
-//           </p>
-//         </div>
-
-//         {/* Quick Links */}
-//         <div>
-//           <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-//           <ul className="space-y-2 text-sm">
-//             <li><Link href="/" className="hover:text-white">Home</Link></li>
-//             <li><Link href="/animals" className="hover:text-white">All Animals</Link></li>
-//             <li><Link href="/about" className="hover:text-white">About Us</Link></li>
-//             <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-//           </ul>
-//         </div>
-
-//         {/* Categories */}
-//         <div>
-//           <h3 className="text-lg font-semibold text-white mb-4">Categories</h3>
-//           <ul className="space-y-2 text-sm">
-//             <li><Link href="/category/cow" className="hover:text-white">Cow</Link></li>
-//             <li><Link href="/category/goat" className="hover:text-white">Goat</Link></li>
-//             <li><Link href="/category/sheep" className="hover:text-white">Sheep</Link></li>
-//             <li><Link href="/category/camel" className="hover:text-white">Camel</Link></li>
-//           </ul>
-//         </div>
-
-//         {/* Contact */}
-//         <div>
-//           <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
-//           <p className="text-sm">📍 Dhaka, Bangladesh</p>
-//           <p className="text-sm mt-2">📞 +880 1777-906923</p>
-//           <p className="text-sm mt-2">✉️ mdferdouahmed31122003@gmail.com</p>
-
-//           {/* Social Icons */}
-//           <div className="flex space-x-4 mt-4">
-//             <Link href="#" className="bg-gray-800 p-2 rounded-full hover:bg-green-500 transition">
-//               <FaFacebookF />
-//             </Link>
-//             <Link href="#" className="bg-gray-800 p-2 rounded-full hover:bg-green-500 transition">
-//               <FaTwitter />
-//             </Link>
-//             <Link href="#" className="bg-gray-800 p-2 rounded-full hover:bg-green-500 transition">
-//               <FaInstagram />
-//             </Link>
-//             <Link href="#" className="bg-gray-800 p-2 rounded-full hover:bg-green-500 transition">
-//               <FaYoutube />
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Bottom */}
-//       <div className="border-t border-gray-700 text-center py-4 text-sm">
-//         © {new Date().getFullYear()} QurbaniHut. All rights reserved.
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
