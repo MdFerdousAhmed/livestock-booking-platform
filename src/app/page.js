@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import QurbaniBanner from "@/components/QurbaniBanner";
 import TopGenerations from "@/components/TopGenerations";
 import Image from "next/image";
 
@@ -12,6 +13,7 @@ export default function Home() {
     <div>
       <Banner></Banner>
       <TopGenerations></TopGenerations>
+      <QurbaniBanner></QurbaniBanner>
     </div>
   );
 }

@@ -9,6 +9,8 @@ const AnimalCard = ({ animal }) => {
       <div className='space-y-4'>
              <Image className='rounded-lg' src={animal.image} alt={animal.name} width={500} height={300} />
              <h2 className=' font-semibold'>Animal Name: {animal.name}</h2>
+             <p className='text-gray-600'>Location: {animal.location}</p>
+             <p className='text-gray-600'>Type: {animal.type}</p>
           </div>
           <Link href={`/all-animals/${animal.id}`}>
             <Button variant="outline" className='w-full mt-4'>View Details</Button>

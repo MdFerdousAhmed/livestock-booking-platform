@@ -3,7 +3,7 @@ import React from "react";
 
 const AnimalMarketBanner = () => {
   return (
-    <section className="bg-linear-to-r from-green-600 to-emerald-500 text-white py-16 px-6">
+    <section className="bg-linear-to-r from-green-600 to-emerald-500 text-white py-16 px-6 rounded-lg ">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
         
         {/* Text Content */}

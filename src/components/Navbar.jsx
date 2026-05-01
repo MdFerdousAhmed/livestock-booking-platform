@@ -34,9 +34,6 @@ const Navbar = () => {
             <NavLink href={"/all-animals"}>All Animals</NavLink>
           </li>
           <li>
-            <NavLink href={"/animal"}>Animal</NavLink>
-          </li>
-          <li>
             <NavLink href={"/profile"}>Profile</NavLink>
           </li>
         </ul>
