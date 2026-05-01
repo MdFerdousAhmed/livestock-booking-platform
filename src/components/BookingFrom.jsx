@@ -1,61 +1,53 @@
-export default function BookingForm() {
+"use client";
+
+import {Envelope} from "@gravity-ui/icons";
+import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
+
+export function BookingForm() {
   return (
-    <div className="max-w-lg bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 grid space-y-4 container mx-auto p-4 justify-center items-center">
-      <h2 className="text-2xl font-bold text-center mb-6">Booking Form</h2>
-
-      <form className="space-y-4">
-        {/* Name */}
-        <div>
-          <label className="block mb-1 font-medium">Name</label>
-          <input
-            type="text"
-            placeholder="Enter your name"
-            className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
-            required
-          />
-        </div>
-
-        {/* Email */}
-        <div>
-          <label className="block mb-1 font-medium">Email</label>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
-            required
-          />
-        </div>
-
-        {/* Phone */}
-        <div>
-          <label className="block mb-1 font-medium">Phone</label>
-          <input
-            type="tel"
-            placeholder="Enter your phone number"
-            className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
-            required
-          />
-        </div>
-
-        {/* Address */}
-        <div>
-          <label className="block mb-1 font-medium">Address</label>
-          <textarea
-            placeholder="Enter your address"
-            rows="3"
-            className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
-            required
-          ></textarea>
-        </div>
-
-        {/* Submit Button */}
-        <button
-          type="submit"
-          className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition"
-        >
-          Book Now
-        </button>
-      </form>
-    </div>
+    <Modal>
+      <Button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">Booking Now</Button>
+      <Modal.Backdrop>
+        <Modal.Container placement="auto">
+          <Modal.Dialog className="sm:max-w-md">
+            <Modal.CloseTrigger />
+            <Modal.Header>
+              <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
+                <Envelope className="size-5" />
+              </Modal.Icon>
+              <Modal.Heading>Contact Us</Modal.Heading>
+            </Modal.Header>
+            <Modal.Body className="p-6">
+              <Surface variant="default">
+                <form className="flex flex-col gap-4">
+                  <TextField className="w-full" name="name" type="text">
+                    <Label>Name</Label>
+                    <Input placeholder="Enter your name" />
+                  </TextField>
+                  <TextField className="w-full" name="email" type="email">
+                    <Label>Email</Label>
+                    <Input placeholder="Enter your email" />
+                  </TextField>
+                  <TextField className="w-full" name="phone" type="tel">
+                    <Label>Phone</Label>
+                    <Input placeholder="Enter your phone number" />
+                  </TextField>
+                  <TextField className="w-full" name="address">
+                    <Label>Address</Label>
+                    <Input placeholder="Enter your address" />
+                  </TextField>
+                </form>
+              </Surface>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button slot="close" variant="secondary">
+                Cancel
+              </Button>
+              <Button slot="close">Booking Now</Button>
+            </Modal.Footer>
+          </Modal.Dialog>
+        </Modal.Container>
+      </Modal.Backdrop>
+    </Modal>
   );
 }

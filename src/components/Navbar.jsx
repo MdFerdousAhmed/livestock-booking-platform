@@ -22,7 +22,7 @@ const Navbar = () => {
               height={30}
               className="object-cover h-auto w-auto"
             />
-            <h3 className="font-black text-lg bg-linear-65 from-purple-500 to-pink-500 bg-clip-text text-transparent">QurbaniHut</h3>
+            <h3 className="font-black text-lg bg-linear-65 from-purple-500 to-pink-500 bg-clip-text text-transparent">QurbaniHat</h3>
           </div>
         </div>
 

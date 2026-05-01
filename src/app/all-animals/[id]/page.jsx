@@ -1,7 +1,7 @@
-import BookingForm from '@/components/BookingFrom';
+import { BookingForm } from '@/components/BookingFrom';
 import { Card } from '@heroui/react';
 import Image from 'next/image';
-import Link from 'next/link';
+
 import React from 'react';
 
 export const generateMetadata = async ({ params }) => {
@@ -23,7 +23,6 @@ const AnimalDetailsPage = async ({ params }) => {
   console.log(animal);
   return (
     <Card >
-      {/* <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto justify-center items-center w-full'> */}
         <div className="max-w-lg bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 grid space-y-4 container mx-auto p-4 justify-center items-center">
 
           {/* Image */}
@@ -62,21 +61,13 @@ const AnimalDetailsPage = async ({ params }) => {
               <span className="text-lg font-bold text-green-600">
                 ৳ {animal.price.toLocaleString()}
               </span>
-
-              <Link href={`/booking/${animal.id}`}>
-                <button  className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
-                  Booking Now
-                </button>
-              </Link>
+                <div>
+                  <BookingForm></BookingForm>
+                </div>
             </div>
           </div>
 
         </div>
-        {/* <div>
-          <BookingForm />
-        </div>
-      </div> */}
-
     </Card>
   );
 };

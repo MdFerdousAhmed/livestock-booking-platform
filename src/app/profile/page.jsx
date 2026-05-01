@@ -2,11 +2,13 @@
 import { UpdateUserModal } from '@/components/UpdateUserModal';
 import { authClient } from '@/lib/auth-client';
 import { Avatar, Card } from '@heroui/react';
+import { redirect } from 'next/navigation';
 import React from 'react';
 
 const ProfilePage = () => {
   const userData = authClient.useSession();
   const user = userData.data?.user;
+
   return (
     <div>
       <Card className='max-w-96 mx-auto flex flex-col items-center border mt-5'>

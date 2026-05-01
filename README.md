@@ -1,3 +1,101 @@
+##  Project Name
+** QurbaniHat
+
+##  Project Purpose
+
+QurbaniHat is a modern web application built to help users explore and book animals for Qurbani. It provides detailed information about cows and goats, including price, breed, weight, and location, making the selection process simple and user-friendly.
+
+---
+
+##  Live URL
+
+ ** https://livestock-booking-platform.vercel.app/
+
+*(Replace this with your deployed link — Vercel / Netlify)*
+
+---
+
+##  Key Features
+
+** Browse different animals (Cow & Goat)
+** View detailed animal information
+** Sort animals by price (Low → High / High → Low)
+** Booking form (Name, Email, Phone, Address)
+** Form submission with success message (no DB storage)
+** Animated UI using modern libraries
+** Fully responsive design (mobile, tablet, desktop)
+
+---
+
+##  NPM Packages Used
+
+Here are the main packages used in this project:
+
+** React / Next.js** – Core framework
+** Tailwind CSS** – Styling
+** Animate.css / React-Spring / Lottie** *(choose one you used)*
+
+Example install:
+
+```bash
+npm install animate.css
+```
+
+---
+
+##  Tech Stack
+
+** Next.js (App Router)
+** React.js
+** Tailwind CSS
+** JavaScript (ES6+)
+
+---
+
+##  Getting Started
+
+Clone the project:
+
+```bash
+git clone https://github.com/your-username/qurbanihut.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+##  Screenshots (Optional)
+
+*Add screenshots of your UI here*
+
+---
+
+##  Contact
+
+If you have any questions or suggestions, feel free to reach out.
+
+---
+
+##  Future Improvements
+
+** Add database (MongoDB / Firebase)
+** User authentication system
+** Online payment integration
+** Admin dashboard
+
+---
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

@@ -29,7 +29,7 @@ const AnimalMarketBanner = () => {
         {/* Image */}
         <div>
           <Image
-            src="/caw.jpg" // put your image in public folder
+            src="/caw1.jpg" // put your image in public folder
             alt="Animal Market"
             width={100}
             height={100}

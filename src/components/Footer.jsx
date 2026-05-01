@@ -32,7 +32,7 @@ const Footer = () => {
                 className="dark:brightness-200"
               />
               <h2 className="text-xl font-semibold tracking-tight dark:text-white bg-linear-65 from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                QurbaniHut
+                QurbaniHat
               </h2>
             </div>
 
@@ -53,7 +53,7 @@ const Footer = () => {
                   href="/generate"
                   className="hover:text-black dark:hover:text-white transition"
                 >
-                  Generate
+                  Caw
                 </Link>
               </li>
               <li>
@@ -61,7 +61,7 @@ const Footer = () => {
                   href="/all-photos"
                   className="hover:text-black dark:hover:text-white transition"
                 >
-                  Gallery
+                  Goat
                 </Link>
               </li>
               <li>
@@ -69,7 +69,7 @@ const Footer = () => {
                   href="/pricing"
                   className="hover:text-black dark:hover:text-white transition"
                 >
-                  Pricing
+                  Sheep
                 </Link>
               </li>
             </ul>
@@ -138,7 +138,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-          <p>© {new Date().getFullYear()} QurbaniHt. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} QurbaniHat. All rights reserved.</p>
 
           <div className="flex items-center gap-6">
             <Link
