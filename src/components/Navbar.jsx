@@ -4,6 +4,7 @@ import Link from "next/link";
 import NavLink from "./shared/NavLink";
 import { authClient } from "@/lib/auth-client";
 import { Avatar, Button } from "@heroui/react";
+import { FaHome, FaUser } from "react-icons/fa";
 
 const Navbar = () => {
   const userData = authClient.useSession();

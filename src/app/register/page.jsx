@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 
 const RegisterPage = () => {
 
@@ -65,6 +65,7 @@ const RegisterPage = () => {
             {errors.password && <p className='text-red-500'>{errors.password.message}</p>}
           </fieldset>
           <button className="btn btn-block bg-blue-500 rounded-md p-2 text-white">Register</button>
+          <ToastContainer />
         </form>
       </div>
     </div>

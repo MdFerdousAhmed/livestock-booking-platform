@@ -13,7 +13,7 @@ import {
 } from "@heroui/react";
 import Link from "next/link";
 import { CgGoogle } from "react-icons/cg";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 
 export default function SignInPage() {
@@ -26,7 +26,7 @@ export default function SignInPage() {
     const { data, error } = await authClient.signIn.email({
       email,
       password,
-      callbackURL: "/",
+      // callbackURL: "/",
     });
     if (error) {
       toast.error("Error occurred while signing in!");
@@ -114,6 +114,7 @@ export default function SignInPage() {
         <CgGoogle />
         Sign in with Google
       </Button>
+      <ToastContainer />
     </Card>
   );
 }

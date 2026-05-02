@@ -24,6 +24,7 @@
     "react-toastify": "^11.1.0"
   },
   "devDependencies": {
+    "@gravity-ui/uikit": "^7.38.0",
     "@tailwindcss/postcss": "^4",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",

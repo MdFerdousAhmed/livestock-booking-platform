@@ -14,7 +14,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { CgGoogle } from "react-icons/cg";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -135,6 +135,7 @@ export default function SignUpPage() {
         <CgGoogle />
         Sign in with Google
       </Button>
+      <ToastContainer />
     </Card>
   );
 }

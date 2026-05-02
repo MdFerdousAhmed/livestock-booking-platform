@@ -4,7 +4,7 @@ import { authClient } from '@/lib/auth-client';
 import { Avatar, Card } from '@heroui/react';
 import { redirect } from 'next/navigation';
 import React from 'react';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 
 const ProfilePage = () => {
   const userData = authClient.useSession();
@@ -29,6 +29,7 @@ const ProfilePage = () => {
 
         <UpdateUserModal></UpdateUserModal>
       </Card>
+      <ToastContainer />
     </div>
   );
 };
