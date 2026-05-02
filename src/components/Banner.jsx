@@ -1,13 +1,14 @@
 import Image from "next/image";
 import React from "react";
+import 'animate.css';
 
 const AnimalMarketBanner = () => {
   return (
     <section className="bg-linear-to-r from-green-600 to-emerald-500 text-white py-16 px-6 rounded-lg ">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10 animate__animated animate__bounce">
 
         {/* Text Content */}
-        <div>
+        <div >
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Buy & Sell Animals Easily
           </h1>
