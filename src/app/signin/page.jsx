@@ -13,6 +13,7 @@ import {
 } from "@heroui/react";
 import Link from "next/link";
 import { CgGoogle } from "react-icons/cg";
+import { toast } from "react-toastify";
 
 
 export default function SignInPage() {
@@ -20,20 +21,26 @@ export default function SignInPage() {
     e.preventDefault();
 
     const email = e.target.email.value;
-    const password = e.target.password.value; 
+    const password = e.target.password.value;
 
-    const {data, error} = await authClient.signIn.email({
+    const { data, error } = await authClient.signIn.email({
       email,
       password,
       callbackURL: "/",
     });
+    if (error) {
+      toast.error("Error occurred while signing in!");
+    }
+    if (data) {
+      toast.success("Sign in successful!");
+    }
 
   };
 
   const handleGoogleSignIn = async () => {
-     const data = await authClient.signIn.social({
-    provider: "google",
-  });
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
   };
 
   return (

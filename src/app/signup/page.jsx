@@ -14,6 +14,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { CgGoogle } from "react-icons/cg";
+import { toast } from "react-toastify";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -32,18 +33,25 @@ export default function SignUpPage() {
       image
     });
 
+    if (error) {
+      toast.error("Error occurred while signing up!");
+    }
+    if (data) {
+      toast.success("Signup successful!");
+    }
 
     if (!error) {
       router.push("/");
     }
 
+
   };
 
   const handleGoogleSignIn = async () => {
-       const data = await authClient.signIn.social({
+    const data = await authClient.signIn.social({
       provider: "google",
     });
-    };
+  };
 
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
@@ -117,11 +125,11 @@ export default function SignUpPage() {
         </div>
       </Form>
       <p className="text-center">
-              Don't have an account?{" "}
-              <Link href="/register" className="text-blue-500 hover:underline">
-                Register
-              </Link>
-            </p>
+        Don't have an account?{" "}
+        <Link href="/register" className="text-blue-500 hover:underline">
+          Register
+        </Link>
+      </p>
       <p className="text-center">or</p>
       <Button onClick={handleGoogleSignIn} className="w-full" variant="outline">
         <CgGoogle />
