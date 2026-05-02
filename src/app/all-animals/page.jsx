@@ -1,5 +1,6 @@
 import AnimalCard from '@/components/AnimalCard';
 import React from 'react';
+import 'animate.css';
 
 export const metadata = {
   title: "livestock-booking-platform all-animals",
@@ -15,7 +16,7 @@ const AllAnimalsPage = async() => {
   
   return (
     <div>
-      <h1 className='text-2xl font-bold my-5'>All Animals</h1>
+      <h1 className='text-2xl font-bold my-5 animate__animated animate__bounce'>All Animals</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
         {animals.map(animal => (
           <AnimalCard key={animal.id} animal={animal} />
