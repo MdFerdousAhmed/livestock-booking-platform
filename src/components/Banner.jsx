@@ -5,15 +5,16 @@ const AnimalMarketBanner = () => {
   return (
     <section className="bg-linear-to-r from-green-600 to-emerald-500 text-white py-16 px-6 rounded-lg ">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
-        
+
         {/* Text Content */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Buy & Sell Animals Easily
           </h1>
           <p className="mt-4 text-lg text-green-100">
-            Discover healthy livestock, pets, and farm animals from trusted sellers.
-            Fast, safe, and reliable marketplace for all your needs.
+            This is a modern and user-friendly livestock marketplace designed to help users easily find
+            and book animals for Qurbani. The platform features a variety of animals including cows and goats,
+            with detailed information such as breed, price, weight, age, and location.
           </p>
 
           <div className="mt-6 flex gap-4">

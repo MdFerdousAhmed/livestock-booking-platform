@@ -11,6 +11,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import Link from "next/link";
 import { CgGoogle } from "react-icons/cg";
 
 
@@ -95,6 +96,12 @@ export default function SignInPage() {
           </Button>
         </div>
       </Form>
+      <p className="text-center">
+        Don't have an account?{" "}
+        <Link href="/register" className="text-blue-500 hover:underline">
+          Register
+        </Link>
+      </p>
       <p className="text-center">or</p>
       <Button onClick={handleGoogleSignIn} className="w-full" variant="outline">
         <CgGoogle />
