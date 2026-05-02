@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 const AllAnimalsPage = async() => {
-  const res = await fetch('http://localhost:3000/data.json',{
+  const res = await fetch('https://livestock-booking-platform.vercel.app/data.json',{
     cache: 'no-store'
   });
   const animals = await res.json(); 

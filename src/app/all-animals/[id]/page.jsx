@@ -17,7 +17,7 @@ export const generateMetadata = async ({ params }) => {
 
 const AnimalDetailsPage = async ({ params }) => {
   const { id } = await params; // Get the animal ID from the URL parameters
-  const res = await fetch("http://localhost:3000/data.json",{
+  const res = await fetch("https://livestock-booking-platform.vercel.app/data.json",{
     cache: 'no-store' // Ensure we get the latest data on each request
   });
   const animals = await res.json();
