@@ -6,7 +6,6 @@ const TopGenerations = async() => {
   const res = await fetch('https://livestock-booking-platform.vercel.app/data.json');
   const animals = await res.json();
   const topAnimals = animals.slice(0, 8);
-  console.log(topAnimals)
   return (
     <div>
       <h1 className='text-2xl font-bold my-5'>Top Animals</h1>
