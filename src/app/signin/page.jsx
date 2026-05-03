@@ -26,7 +26,7 @@ export default function SignInPage() {
     const { data, error } = await authClient.signIn.email({
       email,
       password,
-      // callbackURL: "/",
+      callbackURL: "/",
     });
     if (error) {
       toast.error("Error occurred while signing in!");
